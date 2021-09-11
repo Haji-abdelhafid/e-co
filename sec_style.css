@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+:root {
+  --font: "Ubuntu", sans-serif;
+  --font-size-fr: 1em;
+  --black-color: black;
+  --white-color: white;
+  --rg-color: rgba(247, 92, 20, 0.89);
+}
+.form_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main header {
+  width: 100%;
+  height: 387px;
+  background-image: url(img/women_sop.png);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+main header {
+  display: grid;
+  grid-template-columns: 1fr 9;
+  grid-template-rows: 1fr 5;
+}
+main header .desc {
+  grid-column: 2/9;
+  grid-row: 2/5;
+}
+main header .desc h1 {
+  font-size: 3em;
+  color: var(--rg-color);
+  text-transform: uppercase;
+}
+main nav {
+  margin: 3% 0;
+  display: flex;
+  justify-content: space-around !important;
+}
+main nav a {
+  text-decoration: underline 0.5px;
+  margin: 1% 25%;
+}
+main .model .md img {
+  width: 230px;
+  height: 250px;
+}
+main .model {
+  width: 90%;
+  margin: 2% 0;
+}
+main .model .md {
+  height: 430px;
+}
+main .back {
+  height: 320px;
+  background: url(img/shoes/women/shoes\ bck.jpg) no-repeat;
+  background-position-y: -400px;
+}
+main .Accessories {
+  background: url(img/Accessories/accessoires.jpg) no-repeat;
+  height: 320px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .header_top {
+  background: url(img/Dresses/pexels-6.jpg) no-repeat fixed;
+  background-size: 100%;
+  background-position-y: 80%;
+  height: 240px;
+}
+main .descr {
+  text-align: center;
+  line-height: 2rem;
+  padding: 5%;
+  box-shadow: var(--rg-color) 2px 0px 5px 1px;
+}
+main .descr h1 {
+  margin: 3%;
+}
+main .current-page {
+  width: 90%;
+  height: auto;
+}
+main .current-page ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+main .current-page ul li {
+  margin: 1%;
+  width: 20px;
+  height: 20px;
+}
+main .current-page ul li:nth-child(1) {
+  border-right: solid var(--rg-color) 2px;
+  border-bottom: solid var(--rg-color) 2px;
+  border-radius: 50%;
+}
+main .current-page ul li:nth-child(1) a {
+  color: var(--rg-color);
+}
+main .current-page ul a span {
+  margin: 38% 0% 0% 0%;
+  color: var(--black-color);
+  font-size: 22px;
+}
+main .current-page ul a span:hover {
+  background-color: var(--rg-color);
+  color: var(--white-color);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+main .current-page ul li a {
+  padding: 30%;
+  color: var(--black-color);
+}
+main .current-page ul li:hover {
+  background-color: var(--rg-color);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+main .current-page ul li a:hover {
+  color: var(--white-color);
+}
+main .shoes {
+  height: 320px;
+  background: url(img/shoes/women/shoes\ bck.jpg) no-repeat;
+  background-position-y: -400px;
+}
+main .current-page .Category label {
+  padding-left: 10%;
+  text-transform: uppercase;
+}
+main .current-page .Category select {
+  width: 200px;
+  border-style: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: var(--font-size-fr);
+  color: var(--rg-color);
+  outline: none;
+  padding-left: 2%;
+  cursor: pointer;
+}
+main .produi {
+  display: flex;
+  width: 100%;
+  margin-top: 4%;
+}
+main .produi .imag {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+main .produi .imag img {
+  width: 70%;
+  height: 100%;
+}
+main .produi .inf {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2% 0%;
+}
+main .produi .inf #prix {
+  display: none;
+}
+main .produi .inf h4 {
+  font-size: 1rem;
+  margin: -4% 0% -3% 1%;
+}
+main .produi .inf .star span {
+  font-size: 1rem;
+  color: rgb(255, 165, 0);
+}
+main .produi .inf form {
+  line-height: 2rem;
+}
+main .produi .inf form .quan {
+  margin-left: 15%;
+}
+main .produi .inf form label {
+  margin: 0% 4% 0% 0%;
+  font-size: 0.8rem;
+}
+main .produi .inf form #size {
+  width: 100%;
+}
+main .produi .inf form input {
+  margin-left: 4%;
+  width: 50px;
+  padding: 1%;
+}
+main .produi .inf form select,
+input {
+  height: 30px;
+  width: 150px;
+  outline: none;
+  background-color: transparent;
+  border-radius: 0%;
+  border: solid 1px;
+}
+main .produi .inf form span {
+  color: gray;
+  font-size: 0.7rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .descreption {
+  width: 85%;
+  margin: 5% 0% 15% 0%;
+}
+.main .descreption h1 {
+  margin: 2% 0%;
+}
+.main .descreption p {
+  text-indent: 3rem;
+  margin: 2% 0;
+  line-height: 1.7rem;
+  font-size: 0.9rem;
+  width: 85%;
+}
+main .men_tshirt {
+  background: url(img/t_shirt/back2.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+}
+main .men_jeans {
+  background: url(img/jeans/back10.jpeg) no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  height: 300px;
+}
+main .men_shoes {
+  background: url(img/shoes/back.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  height: 350px;
+}
+main .men_watches {
+  background: url(img/watches/back1.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 55%;
+  height: 350px;
+}
+main .men_header {
+  width: 100%;
+  background: url(img/back.jpg) no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position-y: 25%;
+}
